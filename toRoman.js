@@ -5,7 +5,6 @@ function convertToRoman(num) {
     if (num > 10) return romanify100(num)
     return romanify10(num)    
 
-
     function multiply(num, char) {
         let str = '';
         while (num--) str += char
@@ -20,7 +19,6 @@ function convertToRoman(num) {
             else if (num < 9)   num = 'V' + multiply((num - 5), 'I' ) 
             else if (num == 9)  num = 'IX'    
         }    
-
         return num
     }
 
