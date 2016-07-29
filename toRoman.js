@@ -6,8 +6,9 @@ function convertToRoman(num) {
     return romanify10(num)    
 
     function multiply(num, char) {
-        let str = '';
-        while (num--) str += char
+        let str = ''
+        while (num--) 
+            str += char   
         return str    
     }
 
