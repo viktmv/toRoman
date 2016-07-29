@@ -1,8 +1,8 @@
 function convertToRoman(num) {
     if (num >= 10000) return 'Number should be less than 10000'
     if (num >= 1000) return romanify10000(num)
-    if (num > 100) return romanify1000(num)
-    if (num > 10) return romanify100(num)
+    if (num >= 100) return romanify1000(num)
+    if (num >= 10) return romanify100(num)
     return romanify10(num)    
 
     function multiply(num, char) {
